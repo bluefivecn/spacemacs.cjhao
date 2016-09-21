@@ -30,7 +30,10 @@
 ;;; Code:
 
 (defconst cjhao-packages
-  '(restclient)
+  '(
+    ;;restclient
+    ;;textmate
+    )
   "The list of Lisp packages required by the cjhao layer.
 
 Each entry is either:
@@ -57,11 +60,15 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
-(defun cjhao/init-restclient ()
-  (use-package restclient
-    :defer t
-    :init 
-    :config))
+;;(defun cjhao/init-restclient ()
+;;  (use-package restclient
+;;    :defer t
+;;    :init 
+;;    :config))
 
-
+;;(defun cjhao/init-textmate ()
+;;  (use-package textmate
+;;    :defer t
+;;    :init
+;;    :config))
 ;;; packages.el ends here
