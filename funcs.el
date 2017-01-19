@@ -173,3 +173,10 @@ directory to make multiple eshell windows easier."
         (substring s pos)
       s)))
 
+;; small funcs
+(defun cjhao/insert-semicolon-to-the-end-of-current-line()
+  (interactive)
+  (save-excursion
+    (end-of-line)
+    (insert ";")))
+
