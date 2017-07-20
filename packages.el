@@ -33,6 +33,8 @@
   '(
     ;;restclient
     ;;textmate
+    wttrin
+    youdao-dictionary
     )
   "The list of Lisp packages required by the cjhao layer.
 
@@ -60,6 +62,17 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+(defun cjhao/init-wttrin ()
+ (use-package wttrin
+   :defer t
+   :init 
+   (setq wttrin-default-cities '("Tianjin")
+   )))
+(defun cjhao/init-youdao-dictionary ()
+ (use-package youdao-dictionary
+   :defer t
+   :init 
+   :config))
 ;;(defun cjhao/init-restclient ()
 ;;  (use-package restclient
 ;;    :defer t
